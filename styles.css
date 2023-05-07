@@ -6,10 +6,46 @@ body, html  {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1, .container-2, .container-3 {
+    padding-top: 12px;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
 .container-1    {
+    color: #eee;
     background-color: #1f2937;
+    flex: 1;
+    min-height: 400px;
+}
+
+.info {
+    display: flex;
+    height: 100%;
+}
+
+.bottom {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .header {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.container-2    {
+    flex: 1;
 }
 
 .container-3    {
     background-color: #e5e7eb;
+    flex: 1;
 }
