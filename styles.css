@@ -35,6 +35,11 @@ html {
   background-color: #1d2028;
 }
 
+img {
+  height: 500px;
+  border-radius: 12px;
+}
+
 .logo {
   font-weight: bold;
 }
@@ -69,7 +74,7 @@ html {
 .links {
   /* Turns the links so they are next to each other */
   display: flex;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .links a {
@@ -82,7 +87,7 @@ html {
 }
 
 .info-left {
-  flex-basis: 48%; /* Sets the left side of info to take 65% of the space avaliable */
+  flex-basis: 45%; /* Sets the left side of info to take 65% of the space avaliable */
   font-size: 18px;
 }
 
@@ -91,17 +96,11 @@ html {
 }
 
 .info-right {
-  flex-basis: 48%; /* Sets the right side of info to take 35% of the space avaliable */
-  background-color: gray;
-  border-radius: 8px;
-}
-
-.image-placeholder {
-  height: 380px;
+  flex-basis: 45%; /* Sets the right side of info to take 35% of the space avaliable */
   display: flex;
-  align-items: center;
   justify-content: center;
 }
+
 
 .info {
   display: flex;
@@ -191,28 +190,64 @@ html {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .info {
         flex-direction: column-reverse;
     }
 
     .info-left {
-        margin-top: 20px;
+        padding-top: 7.2%;
+    }
+
+    img {
+        height: 550px;
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .info {
+        flex-direction: column-reverse;
+    }
+
+    .info-left {
+        padding-top: 7.2%;
+    }
+
+    img {
+        height: 400px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    img {
+        height: 400px;
+    }
+}
 
 @media screen and (max-width: 767px) {
   /* First container changes if the screen is smaller than 768px */
 
-  .subtext,
-  .header,
-  .author {
+  .header, .links, .info-left .top-button, .header-right .top-button {
+    font-size: 12px;
+  }
+
+  .subtext {
     font-size: 14px;
   }
 
+  img {
+    height: 250px;
+  }
+
   .title {
-    font-size: 30px;
+    font-size: 26px;
+  }
+
+  .info-left {
+    padding-top: 7.2%;
   }
 
   .container-2,
@@ -223,7 +258,6 @@ html {
 
   .info {
     flex-direction: column-reverse;
-    margin-top: 20px;
     padding: 5%;
   }
 
@@ -232,13 +266,6 @@ html {
     flex-basis: 100%; /* Makes the info take up 100% of the space on mobile */
   }
 
-  .info-right {
-    min-width: 300px;
-  }
-
-  .info-left {
-    margin-bottom: 20px; /* Add margin to the bottom of info-left on mobile */
-  }
 
   .container-2 .top,
   .quote {
