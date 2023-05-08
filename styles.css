@@ -22,7 +22,7 @@ html {
 
 .container-1 {
   /* Sets the first container colors*/
-  background-color: #1f2937;
+  background-color: #222831;
   color: #eee;
 }
 
@@ -32,7 +32,7 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #18222f;
+  background-color: #1d2028;
 }
 
 .logo {
@@ -41,22 +41,24 @@ html {
 
 .title {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 52px;
 }
 
 .subtext {
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .info-left button,
 .links button {
   /* Styles the button in info-left */
-  background-color: #00000000; /* Transparent background #00000000*/
-  color: #eee;
+  background-color: #FFD369; /* Transparent background #00000000*/
+  color: #393E46;
   border-radius: 6px; /* Rounded corners */
   padding: 6px 16px;
-  border: 2px solid #eee;
-  font-size: 12px;
+  font-weight: 900;
+  font-size: 14px;
+  border: none;
   cursor: pointer; /* Changes the cursor to a pointer when you hover over the button */
 }
 
@@ -80,7 +82,7 @@ html {
 }
 
 .info-left {
-  flex-basis: 47.5%; /* Sets the left side of info to take 65% of the space avaliable */
+  flex-basis: 48%; /* Sets the left side of info to take 65% of the space avaliable */
   font-size: 18px;
 }
 
@@ -89,13 +91,13 @@ html {
 }
 
 .info-right {
-  flex-basis: 47.5%; /* Sets the right side of info to take 35% of the space avaliable */
+  flex-basis: 48%; /* Sets the right side of info to take 35% of the space avaliable */
   background-color: gray;
   border-radius: 8px;
 }
 
 .image-placeholder {
-  height: 180px;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,22 +113,17 @@ html {
 .info,
 .container-2,
 .container-3 {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
 /* Container-2 */
 
-.container-2 {
-  /* Sets the second container colors*/
-  background-color: #eee;
-}
-
 .container-2 .top {
   /* Sets the top text of the second container */
-  font-weight: 900;
+  font-weight: 600;
   font-size: 22px;
   text-align: center;
   margin-bottom: 26px;
@@ -143,20 +140,23 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #393E46;
+  color: #eee;
+  height: 100%;
 }
 
 .card-placeholder {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border-radius: 10px;
-  border: 2px solid #3882f6;
+  border: 2px solid #FFD369;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 120px;
+  width: 220px;
 }
 
 .card .subtext {
@@ -191,24 +191,40 @@ html {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 900px) {
+    .info {
+        flex-direction: column-reverse;
+    }
+
+    .info-left {
+        margin-top: 20px;
+    }
+}
+
+
 @media screen and (max-width: 767px) {
   /* First container changes if the screen is smaller than 768px */
 
   .subtext,
   .header,
   .author {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .title {
-    font-size: 22px;
+    font-size: 30px;
   }
 
-  .info,
   .container-2,
   .container-3 {
     flex-direction: column; /* Makes the info stack on top of each other on mobile */
     padding: 5%; /* Makes the padding smaller on mobile */
+  }
+
+  .info {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    padding: 5%;
   }
 
   .info-left,
