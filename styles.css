@@ -105,11 +105,16 @@ html {
   display: flex;
   flex-wrap: wrap; /* Allows the info to wrap on smaller screens */
   justify-content: space-between; /* The 5% not avaliable is used as a margin between the two */
+  align-items: center;
+}
+
+.info,
+.container-2,
+.container-3 {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
-  align-items: center;
 }
 
 /* Container-2 */
@@ -117,18 +122,14 @@ html {
 .container-2 {
   /* Sets the second container colors*/
   background-color: #eee;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .container-2 .top {
   /* Sets the top text of the second container */
   font-weight: 900;
   font-size: 22px;
-  background-color: #eee;
   text-align: center;
+  margin-bottom: 26px;
 }
 
 .container-2 .bottom {
@@ -139,9 +140,9 @@ html {
 }
 
 .container-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .card-placeholder {
@@ -163,11 +164,39 @@ html {
   margin-top: 10px;
 }
 
+/* Container N.3 */
+
+.container-3 {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-wrapper {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.quote {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.author {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 767px) {
   /* First container changes if the screen is smaller than 768px */
 
   .subtext,
-  .header {
+  .header,
+  .author {
     font-size: 12px;
   }
 
@@ -175,7 +204,9 @@ html {
     font-size: 22px;
   }
 
-  .info {
+  .info,
+  .container-2,
+  .container-3 {
     flex-direction: column; /* Makes the info stack on top of each other on mobile */
     padding: 5%; /* Makes the padding smaller on mobile */
   }
@@ -183,19 +214,18 @@ html {
   .info-left,
   .info-right {
     flex-basis: 100%; /* Makes the info take up 100% of the space on mobile */
-    margin: 0; /* Remove the right margin on small screens */
   }
 
   .info-right {
     min-width: 300px;
   }
 
-  .info-left div {
+  .info-left {
     margin-bottom: 20px; /* Add margin to the bottom of info-left on mobile */
   }
 
-  .container-2 .top {
+  .container-2 .top,
+  .quote {
     font-size: 18px;
-    margin-bottom: 26px;
   }
 }
