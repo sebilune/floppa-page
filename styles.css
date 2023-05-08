@@ -1,66 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap");
 
-body, html  {
-    height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+body,
+html {
+  /* Sets the body and html to take up the whole page */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+.container-1,
+.container-2,
+.container-3 {
+  /* Sets the containers to take up the whole page */
+  height: 100%;
+  flex: 1;
 }
 
-.container-1, .container-2, .container-3 {
-    padding-left: 14%;
-    padding-right: 14%;
-    flex: 1;
-}
-
-.container-1    {
-    color: #eee;
-    background-color: #1f2937;
-    display: flex;
-    flex-direction: column;
-}
-
-.info {
-    display: flex;
-}
-
-.info-left {
-    flex: 1;
-
-    /* FIX THIS LATER */
-    margin-right: 5%;
-    /* FIX THIS LATER */
-}
-
-.info-right {
-    flex: 1;
-    background-color: lightslategray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-1 .top {
-    margin-top: 2.5%;
-}
-
-.container-1 .bottom {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    min-height: 350px;
+.container-1 {
+  /* Sets the first container colors*/
+  background-color: #1f2937;
+  color: #eee;
 }
 
 .header {
+  /* Sets the top bar, with the logo on the left and the links the right */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #18222f;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.subtext {
+  font-size: 12px;
+}
+
+.info-left button,
+.links button {
+  /* Styles the button in info-left */
+  background-color: #00000000; /* Transparent background #00000000*/
+  color: #eee;
+  border-radius: 6px; /* Rounded corners */
+  padding: 6px 16px;
+  border: 2px solid #eee;
+  font-size: 12px;
+  cursor: pointer; /* Changes the cursor to a pointer when you hover over the button */
+}
+
+.links button {
+  margin-left: 20px;
+}
+
+.links {
+  /* Turns the links so they are next to each other */
+  display: flex;
+  font-size: 12px;
+}
+
+.links a {
+  /* Spaces the links and makes them white */
+  margin-left: 10px;
+  text-decoration: none;
+  color: #eee;
+  display: flex;
+  align-items: center;
+}
+
+.info-left {
+  flex-basis: 47.5%; /* Sets the left side of info to take 65% of the space avaliable */
+  font-size: 18px;
+}
+
+.info-left div {
+  margin-bottom: 4%;
+}
+
+.info-right {
+  flex-basis: 47.5%; /* Sets the right side of info to take 35% of the space avaliable */
+  background-color: gray;
+  border-radius: 8px;
+}
+
+.image-placeholder {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap; /* Allows the info to wrap on smaller screens */
+  justify-content: space-between; /* The 5% not avaliable is used as a margin between the two */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-items: center;
+}
+
+/* Container-2 */
+
+.container-2 {
+  /* Sets the second container colors*/
+  background-color: #eee;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.container-2 .top {
+  /* Sets the top text of the second container */
+  font-weight: 900;
+  font-size: 22px;
+  background-color: #eee;
+  text-align: center;
+}
+
+.container-2 .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.container-2 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.container-3    {
-    background-color: #e5e7eb;
+.card-placeholder {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid #3882f6;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.card .subtext {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  /* First container changes if the screen is smaller than 768px */
+
+  .subtext,
+  .header {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .info {
+    flex-direction: column; /* Makes the info stack on top of each other on mobile */
+    padding: 5%; /* Makes the padding smaller on mobile */
+  }
+
+  .info-left,
+  .info-right {
+    flex-basis: 100%; /* Makes the info take up 100% of the space on mobile */
+    margin: 0; /* Remove the right margin on small screens */
+  }
+
+  .info-right {
+    min-width: 300px;
+  }
+
+  .info-left div {
+    margin-bottom: 20px; /* Add margin to the bottom of info-left on mobile */
+  }
+
+  .container-2 .top {
+    font-size: 18px;
+    margin-bottom: 26px;
+  }
 }
