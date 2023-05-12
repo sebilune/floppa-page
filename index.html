@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="script.js"></script>
     <title>Floppa Site</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
     <div class="container">
 
       <div class="navbar">
-        <img src="./img/floppa-icon.png" class="logo" />
+        <a href="https://youtu.be/C5DStk1jJac" target="_blank" ><img src="./img/floppa-icon.png" class="logo" /></a>
         <nav class="nav-left">
           <ul>
               <li><a href="https://github.com/sebiram" target="_blank" class="made-by">Made by <span class="gradient-text made-by">@sebiram</span></a></li>
@@ -39,10 +40,11 @@
             Floppa.
           </h3>
           <p>Scroll!</p>
-          <button type="button">
+          <button type="button" onclick="playSound()">
             <span>Flop!</span>
             <img src="./img/arrow.png"/>
           </button>
+          <audio src="./assets/floppa-roar.mp3" type="audio/mp3" id="myAudio"></audio>
         </div>
         <div class="col-2">
           <img src="img/floppa-edit-gif.gif" class="floppa">
