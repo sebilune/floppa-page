@@ -90,7 +90,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: hotpink;
+    color: #ff105f;
 }
 
 .info-container {
@@ -162,4 +162,34 @@ button:hover {
 
 button span {
     font-size: 1.6rem;
+}
+
+.col-1::after {
+    /* Line gradient left of the title */
+
+    content: " ";
+    width: 1rem;
+    height: 57%;
+    background: linear-gradient(#ff105f, #ffad06);
+    position: absolute;
+    left: -4rem;
+    top: .8rem;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .floppa {
+    width: 85%;
+    
+    border: 5px solid transparent; 
+    background-clip: padding-box; 
+    border-image: linear-gradient(#ff105f, #ffad06);
+    border-image-slice: 1;
+    
+      
 }
