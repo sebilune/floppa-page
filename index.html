@@ -8,12 +8,20 @@
     <link rel="icon" type="image/png" href="./img/tab-icon.png" />
     <script src="script.js"></script>
     <title>Floppa Lovers</title>
+    <audio
+      src="./assets/floppa-roar.mp3"
+      type="audio/mp3"
+      id="roarSound"
+    ></audio>
+    <audio src="./assets/dreamy.mp3" type="audio/mp3" id="dreamSound"></audio>
   </head>
   <body>
     <!-- Container N.1 -->
     <div class="container">
       <div class="navbar">
-        <a href="https://youtu.be/C5DStk1jJac" target="_blank"><img src="./img/floppa-icon.png" class="logo"/></a>
+        <a href="https://youtu.be/C5DStk1jJac" target="_blank"
+          ><img src="./img/floppa-icon.png" class="logo"
+        /></a>
         <nav class="nav-left">
           <ul>
             <li>
@@ -21,7 +29,8 @@
                 href="https://github.com/sebiram"
                 target="_blank"
                 class="made-by"
-                >Made by <span class="gradient-text made-by">@sebiram</span></a>
+                >Made by <span class="gradient-text made-by">@sebiram</span></a
+              >
             </li>
           </ul>
         </nav>
@@ -49,11 +58,6 @@
             <span>Flop!</span>
             <img src="./img/arrow.png" />
           </button>
-          <audio
-            src="./assets/floppa-roar.mp3"
-            type="audio/mp3"
-            id="myAudio"
-          ></audio>
         </div>
         <div class="col-2">
           <img src="img/floppa-edit-gif.gif" class="floppa" />
@@ -69,12 +73,13 @@
       </div>
 
       <div class="card-container">
+        <!-- Card N.1 -->
         <div class="card">
           <div class="img-container">
             <img class="card-img" src="./img/floppa-santa.jpg" alt="" />
           </div>
           <div class="txt-container">
-            <h3>Santa <span class="gradient-text made-by">Floppa</span></h3>
+            <h3>Santa <span class="gradient-text">Floppa</span></h3>
             <p>
               Floppa's real name is Gosha. The meme community uses the name
               Floppa, in reference to the caracal's distinctive, large tufted
@@ -82,42 +87,101 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <!-- Card N.2 -->
+        <div class="card" onclick="playSoundOne()">
           <div class="img-container">
-            <img class="card-img" src="./img/floppa-sleep.jpg" alt="" />
+            <img class="card-img" src="./img/rainbow-floppa.gif" alt="" />
           </div>
           <div class="txt-container">
-            <h3>Sleepy <span class="gradient-text made-by">Floppa</span></h3>
+            <h3><span class="rainbow-text">Rainbow Floppa</span></h3>
             <p>
-              Floppa's unique appearance and quirky personality have made him a
-              beloved internet celebrity, with fans all over the world.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              odio adipisci esse animi perferendis sequi!
             </p>
           </div>
         </div>
+        <!-- Card N.3 -->
         <div class="card">
           <div class="img-container">
             <img class="card-img" src="./img/floppa-smart.jpg" alt="" />
           </div>
           <div class="txt-container">
-            <h3>Nerdy <span class="gradient-text made-by">Floppa</span></h3>
+            <h3>Nerdy <span class="gradient-text">Floppa</span></h3>
             <p>
               Floppa has inspired a wide range of merchandise, including
               clothing, mugs, phone cases, and even plush toys.
             </p>
           </div>
         </div>
+        <!-- Card N.4 -->
+        <div class="card">
+          <div class="img-container">
+            <img class="card-img" src="./img/rawr.gif" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Angry <span class="gradient-text">Floppa</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              aperiam labore, expedita consequatur nihil voluptatibus.
+            </p>
+          </div>
+        </div>
+        <!-- Card N.5 -->
+        <div class="card">
+          <div class="img-container">
+            <img class="card-img" src="./img/relaxed-floppa.gif" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Relaxed <span class="gradient-text">Floppa</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              dolor aliquid obcaecati? Incidunt, temporibus nulla?
+            </p>
+          </div>
+        </div>
+        <!-- Card N.6 -->
+        <div class="card">
+          <div class="img-container">
+            <img class="card-img" src="./img/floppa-sleep.jpg" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Sleepy <span class="gradient-text">Floppa</span></h3>
+            <p>
+              Floppa's unique appearance and quirky personality have made him a
+              beloved internet celebrity, with fans all over the world.
+            </p>
+          </div>
+        </div>
+        <!-- Card N.7 -->
+        <div class="card">
+          <div class="img-container">
+            <img class="card-img" src="./img/baby-floppa.gif" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Detective <span class="gradient-text">Floppa</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              delectus doloremque, expedita dolor ex quas!
+            </p>
+          </div>
+        </div>
+        <!-- Card N.8 -->
         <div class="card">
           <div class="img-container">
             <img class="card-img" src="./img/floppa-doubt.jpg" alt="" />
           </div>
           <div class="txt-container">
-            <h3>Detective <span class="gradient-text made-by">Floppa</span></h3>
+            <h3>Detective <span class="gradient-text">Floppa</span></h3>
             <p>
               Floppa is a caracal, a medium-sized wild cat native to Africa, the
               Middle East, Central Asia, and India.
             </p>
           </div>
         </div>
+      </div>
+
+      <div class="footer">
+        <h2>Only the best.</h2>
       </div>
     </div>
     <!-- Container N.2 -->

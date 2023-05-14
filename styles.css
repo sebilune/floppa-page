@@ -140,6 +140,26 @@ nav ul li a {
   text-shadow: 0 2px 5px rgba(94, 97, 255, 0.562);
 }
 
+.rainbow-text {
+  background: linear-gradient(to right, #ff0000, #ff8c00, #ffff00, #00ff00, #0000ff, #8b00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 6s linear infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+
+
 .col-1 h3 {
   font-size: 2.4rem;
   margin-bottom: 2rem;
@@ -243,11 +263,22 @@ button:hover span {
   justify-content: space-between;
 }
 
-.container-2 .heading {
+.container-2 .footer, .container-2 .heading {
   font-size: 3.2rem;
   display: flex;
   justify-content: center;
-  margin: 10rem 0 8rem;
+}
+
+.footer h2 {
+  font-weight: 100;
+  font-size: 2rem;
+  color: rgb(150, 150, 150);
+  font-style: italic;
+}
+
+.heading h2, .footer h2 {
+  line-height: 10rem;
+  margin: 8.6rem 0;
 }
 
 .container-2 .card-container {
