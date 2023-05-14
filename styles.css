@@ -240,13 +240,18 @@ button:hover span {
 
   overflow: hidden;
 
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .container-2 .heading {
   font-size: 3.2rem;
   display: flex;
   justify-content: center;
+  margin: 10rem 0 8rem;
+}
+
+.container-2 .card-container {
+  flex: 1;
 }
 
 .card-container {
@@ -272,7 +277,7 @@ button:hover span {
   border-radius: 1.2rem;
   border: 0.01rem solid #eee;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
+  
   transition: transform 0.2s ease-in-out;
 }
 
@@ -280,8 +285,16 @@ button:hover span {
   transform: scale(1.05);
 }
 
-.heading h2 {
-  margin: 8rem 0 8rem;
+.img-container {
+  width: 100%;
+  height: 32rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
 }
 
 .card h3 {
@@ -293,19 +306,6 @@ button:hover span {
 .card p {
   height: 9.2rem;
 }
-
-.card-img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 1.2rem;
-}
-
-.img-container {
-  width: 100%;
-  height: 32rem;
-}
-
 
 
 /* Media Queries */
