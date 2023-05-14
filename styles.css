@@ -226,77 +226,9 @@ button:hover span {
   border-radius: 1.2rem;
 }
 
-@media only screen and (max-width: 380px) {
-    :root {
-        font-size: 32.5%;
-    }
-    
-    .nav-left {
-        flex-basis: 100%;
-    }
-    
-    .nav-left ul {
-        justify-content: center;
-        display: flex;
-    }
-    
-    .nav-left ul li {
-        margin: 0;
-    }
-    
-    .nav-right ul {
-        width: 100%;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        top: 12rem;
-        right: 0;
-        z-index: 2;
-    
-        background: linear-gradient(90deg, #5e60ff 45%, #6d5cff 65%);
-    }
-    
-    .nav-right ul li {
-        margin-top: 1.2rem;
-        margin-bottom: 1.2rem;
-    }
-    
-    .nav-right ul li a {
-        color: #eee;
-        margin-left: 3rem;
-    }
-    
-    .info-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .col-1 {
-        flex-basis: 100%;
-        margin-bottom: 4rem;
-    }
-    
-    .col-2 {
-        flex-basis: 100%;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .col-2 .floppa {
-        flex: 1;
-        padding: 5%;
-        width: 100%;
-    }
-    
-    .nav-right ul li a:hover {
-        color: #fff;
-        font-weight: unset;
-        transition: none;
-    }
-}
-@media only screen and (min-width: 380px) and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
   :root {
-    font-size: 40%;
+    font-size: 35%;
   }
 
   .nav-left {
@@ -328,15 +260,97 @@ button:hover span {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
   }
-
+  
   .nav-right ul li a {
     color: #eee;
     margin-left: 3rem;
   }
 
+  .nav-right ul li a:hover {
+    color: #fff;
+    font-weight: unset;
+    transition: none;
+  }
+  
   .info-container {
     flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .col-1 {
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+    width: 100%;
     justify-content: center;
+  }
+
+  .col-2 .floppa {
+    flex: 1;
+    padding: 5%;
+    width: 100%;
+  }
+
+}
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  :root {
+    font-size: 40%;
+  }
+
+  .nav-left {
+    flex-basis: 100%;
+  }
+
+  .nav-left ul {
+    justify-content: center;
+    display: flex;
+  }
+
+  .nav-left ul li {
+    margin: 0;
+  }
+
+  .nav-right ul {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 12rem;
+    right: 0;
+    z-index: 2;
+    
+    background: linear-gradient(90deg, #5e60ff 45%, #6d5cff 65%);
+  }
+
+  
+  .nav-right ul li {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .nav-right ul li a {
+    color: #eee;
+    margin-left: 3rem;
+  }
+
+  .nav-right ul li a:hover {
+    color: #fff;
+    font-weight: unset;
+    transition: none;
+  }
+  
+  .info-container {
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 20%;
+    margin-bottom: 20%;
   }
 
   .col-1 {
@@ -354,11 +368,6 @@ button:hover span {
     max-width: 50rem;
   }
 
-  .nav-right ul li a:hover {
-    color: #fff;
-    font-weight: unset;
-    transition: none;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -390,21 +399,29 @@ button:hover span {
 
     background: linear-gradient(90deg, #5e60ff 45%, #6d5cff 65%);
   }
-
+  
   .nav-right ul li {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-
+  
   .nav-right ul li a {
     color: #eee;
     margin-left: 3rem;
   }
+  
+  .nav-right ul li a:hover {
+    color: #fff;
+    font-weight: unset;
+    transition: none;
+  }
 
   .info-container {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 
+    margin-top: 20%;
+    margin-bottom: 20%;
   }
 
   .col-1 {
@@ -423,11 +440,6 @@ button:hover span {
     padding: 5%;
   }
 
-  .nav-right ul li a:hover {
-    color: #fff;
-    font-weight: unset;
-    transition: none;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
