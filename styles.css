@@ -140,6 +140,16 @@ nav ul li a {
   text-shadow: 0 2px 5px rgba(94, 97, 255, 0.562);
 }
 
+.gradient-mv-text {
+  background: linear-gradient(to right, #5f61ff, #6566ff, #7b7cff, #c4c4ff, #8f90ff, #8a5fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 8s linear infinite;
+  background-size: 400% 100%;
+}
+
+
 .rainbow-text {
   background: linear-gradient(to right, #ff0000, #ff8c00, #ffff00, #00ff00, #0000ff, #8b00ff);
   background-clip: text;
