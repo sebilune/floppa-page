@@ -226,6 +226,89 @@ button:hover span {
   border-radius: 1.2rem;
 }
 
+/* Container N.2 */
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding-left: 8%;
+  padding-right: 8%;
+
+  overflow: hidden;
+
+  justify-content: center;
+}
+
+.container-2 .heading {
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2rem;
+
+  width: 35rem;
+  height: 55rem;
+  padding: 2rem;
+  
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+
+
+  border-radius: 1.2rem;
+  border: 0.01rem solid #eee;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.heading h2 {
+  margin: 8rem 0 8rem;
+}
+
+.card h3 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin: 2rem 0;
+}
+
+.card p {
+  height: 9.2rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+.img-container {
+  width: 100%;
+  height: 32rem;
+}
+
+
+
+/* Media Queries */
 @media only screen and (max-width: 375px) {
   :root {
     font-size: 35%;

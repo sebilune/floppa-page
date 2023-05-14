@@ -5,25 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <link rel="icon" type="image/png" href="./img/tab-icon.png">
+    <link rel="icon" type="image/png" href="./img/tab-icon.png" />
     <script src="script.js"></script>
     <title>Floppa Lovers</title>
   </head>
   <body>
     <!-- Container N.1 -->
     <div class="container">
-
       <div class="navbar">
-        <a href="https://youtu.be/C5DStk1jJac" target="_blank" ><img src="./img/floppa-icon.png" class="logo" /></a>
+        <a href="https://youtu.be/C5DStk1jJac" target="_blank"><img src="./img/floppa-icon.png" class="logo"/></a>
         <nav class="nav-left">
           <ul>
-              <li><a href="https://github.com/sebiram" target="_blank" class="made-by">Made by <span class="gradient-text made-by">@sebiram</span></a></li>
+            <li>
+              <a
+                href="https://github.com/sebiram"
+                target="_blank"
+                class="made-by"
+                >Made by <span class="gradient-text made-by">@sebiram</span></a>
+            </li>
           </ul>
         </nav>
         <nav class="nav-right">
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#">Floppas</a></li>
+            <li><a href="#floppas">Floppas</a></li>
             <li><a href="#">Newsletter</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -32,80 +37,98 @@
       </div>
 
       <div class="info-container">
-
         <div class="col-1">
           <h2>This is a <span class="gradient-text">Floppa</span> site.</h2>
           <h3>
             Floppa is a very cute cat with unique facial expressions that has
-            brought joy to many people on the internet. This page is dedicated to
-            Floppa.
+            brought joy to many people on the internet. This page is dedicated
+            to Floppa.
           </h3>
           <p>Scroll!</p>
           <button type="button" onclick="playSound()">
             <span>Flop!</span>
-            <img src="./img/arrow.png"/>
+            <img src="./img/arrow.png" />
           </button>
-          <audio src="./assets/floppa-roar.mp3" type="audio/mp3" id="myAudio"></audio>
+          <audio
+            src="./assets/floppa-roar.mp3"
+            type="audio/mp3"
+            id="myAudio"
+          ></audio>
         </div>
         <div class="col-2">
-          <img src="img/floppa-edit-gif.gif" class="floppa">
+          <img src="img/floppa-edit-gif.gif" class="floppa" />
         </div>
-
       </div>
     </div>
     <!-- Container N.1 -->
 
     <!-- Container N.2 -->
-    <div class="container-2">
+    <div class="container-2" id="floppas">
       <div class="heading">
-        <div>Our Floppas.</div>
+        <h2>Best <span class="gradient-text">Floppas.</span></h2>
       </div>
 
       <div class="card-container">
         <div class="card">
-          <img class="card-img" src="./img/floppa-santa.jpg" alt="" />
-          <h3>Title</h3>
-          <p>
-            Floppa's real name is Gosha. The meme community uses the name
-            Floppa, in reference to the caracal's distinctive, large tufted
-            ears.
-          </p>
+          <div class="img-container">
+            <img class="card-img" src="./img/floppa-santa.jpg" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Santa <span class="gradient-text made-by">Floppa</span></h3>
+            <p>
+              Floppa's real name is Gosha. The meme community uses the name
+              Floppa, in reference to the caracal's distinctive, large tufted
+              ears.
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img class="card-img" src="./img/floppa-sleep.jpg" alt="" />
-          <h3>Title</h3>
-          <p>
-            Floppa's unique appearance and quirky personality have made him a
-            beloved internet celebrity, with fans all over the world.
-          </p>
+          <div class="img-container">
+            <img class="card-img" src="./img/floppa-sleep.jpg" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Sleepy <span class="gradient-text made-by">Floppa</span></h3>
+            <p>
+              Floppa's unique appearance and quirky personality have made him a
+              beloved internet celebrity, with fans all over the world.
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img class="card-img" src="./img/floppa-smart.jpg" alt="" />
-          <h3>Title</h3>
-          <p>
-            Floppa has inspired a wide range of merchandise, including clothing,
-            mugs, phone cases, and even plush toys.
-          </p>
+          <div class="img-container">
+            <img class="card-img" src="./img/floppa-smart.jpg" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Nerdy <span class="gradient-text made-by">Floppa</span></h3>
+            <p>
+              Floppa has inspired a wide range of merchandise, including
+              clothing, mugs, phone cases, and even plush toys.
+            </p>
+          </div>
         </div>
         <div class="card">
-          <img class="card-img" src="./img/floppa-doubt.jpg" alt="" />
-          <h3>Title</h3>
-          <p>
-            Floppa is a caracal, a medium-sized wild cat native to Africa, the
-            Middle East, Central Asia, and India.
-          </p>
+          <div class="img-container">
+            <img class="card-img" src="./img/floppa-doubt.jpg" alt="" />
+          </div>
+          <div class="txt-container">
+            <h3>Detective <span class="gradient-text made-by">Floppa</span></h3>
+            <p>
+              Floppa is a caracal, a medium-sized wild cat native to Africa, the
+              Middle East, Central Asia, and India.
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!-- Container N.2 -->
 
     <!-- Container N.3 -->
-    <div class="container-3">
+    <!-- <div class="container-3">
       <div class="quote-wrapper">
         <div class="quote">"Time spent with a cat is time never wasted."</div>
         <div class="author">- Colette</div>
       </div>
-    </div>
+    </div> -->
     <!-- Container N.3 -->
   </body>
 </html>
