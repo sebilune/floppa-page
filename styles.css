@@ -194,8 +194,10 @@ button {
   background: linear-gradient(90deg, #5e60ff 45%, #6d5cff 65%);
   border-radius: 0.5rem;
   cursor: pointer;
+
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 button img {
@@ -210,6 +212,7 @@ button img {
 button:hover img {
   opacity: 1; /* set the opacity to 1 on hover */
   width: 2.2rem;
+  
   justify-content: space-between;
 
   transition: all 0.3s ease;
