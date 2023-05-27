@@ -63,12 +63,6 @@ html {
   width: 8rem;
   padding: 2.5rem;
   cursor: pointer;
-  transition: width 0.5s ease;
-}
-
-.menu-icon:hover {
-  width: 9rem;
-  transition: width 0.5s ease;
 }
 
 .nav-left,
