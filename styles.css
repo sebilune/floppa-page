@@ -315,12 +315,6 @@ button:hover span {
   border-radius: 1.2rem;
   border: 0.01rem solid #eee;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  
-  transition: transform 0.2s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .img-container {
