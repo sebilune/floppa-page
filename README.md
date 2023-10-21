@@ -1,6 +1,6 @@
 # Floppa Website
 
-Welcome to the Floppa Website repository! This repository contains the source code and assets for a website dedicated to Floppa, an internet cat. The website serves as a demonstration of my ability to create a responsive website using vanilla HTML, CSS, and JavaScript, without relying on frameworks or extensions.
+Welcome to the Floppa Website repository! This repository contains the source code and assets for a website dedicated to Floppa, an internet cat. The website serves as a demonstration of my ability to create a responsive website using vanilla HTML, CSS, and JavaScript. The TiltJS library was also used for interactivity with the cards.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
